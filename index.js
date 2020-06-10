@@ -94,16 +94,9 @@ Your function should accept:
 (2) an index
 
 For example, getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully. */
-
-function getFlavorByIndex(flavorList,number){
-
-    if(number>=0 && number<flavorList.length){
-        console.log(flavorList[number])
-    }else{
-        console.log('You have inputted an invalid number');
-    }  
-
-}
+function getFlavorByIndex(arr,index){
+    return arr[index];
+    }
 //getFlavorByIndex(originalFlavors,40);
 /* Task 5: As corporate wants to add more and more flavors to their lineup, 
 they've realized that they need to remove flavors based on flavor name, as opposed to just arbitrarily removing the first or last flavor. 
@@ -183,18 +176,19 @@ function filterByWord(flavorList,flavor){
 
     let newList=[];
     for(let i = 0; i<flavorList.length; i++){
-        if((flavorList[i].toLowerCase()).includes(flavor,0)) {
+        if((flavorList[i].toLowerCase()).includes(flavor.toLowerCase(),0)) {
             newList.push(flavorList[i]);
         }
     }
     return newList;
 }
-//console.log(filterByWord(originalFlavors,'cherry'));
+console.log(filterByWord(originalFlavors,'cherry'));
 
 
 /* 🧁🍦🍨 STRETCH 🍨🍦🍫*/ 
 
-/* STRETCH 1: Write a function that returns the average number of words in an array. You should be able to use this function for any array, but can test with originalFlavors.
+/* STRETCH 1: Write a function that returns the average number of words in an array. You should be able to use this function for any array, 
+but can test with originalFlavors.
 
 Your function should accept: 
 
