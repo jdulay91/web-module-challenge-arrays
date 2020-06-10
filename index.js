@@ -45,7 +45,7 @@ function is31Flavors(flavorList){
    return 31===flavorList.length;
 
 }
-console.log(is31Flavors(originalFlavors));
+//console.log(is31Flavors(originalFlavors));
 /* Task 2: Corporate has come to you with an idea for a new flavor:
  Rainbow Sherbert! They think this will be a game changer. 
  You need to modify the array to include this flavor. 
@@ -97,7 +97,7 @@ For example, getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", a
 
 function getFlavorByIndex(flavorList,number){
 
-    if(number<flavorList.length){
+    if(number>=0 && number<flavorList.length){
         console.log(flavorList[number])
     }else{
         console.log('You have inputted an invalid number');
