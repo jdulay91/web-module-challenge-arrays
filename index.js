@@ -145,18 +145,18 @@ Your function should accept:
 
 and should return a new array that is identical to the old array. You can name the new array however you'd like. */
 
-/*function copy(flavorList,newListName){
+function copy(flavorList,newListName){
     newListName =[];
     for(let i=0; i<flavorList.length;i++){
         newListName.push(flavorList[i]);
     }return newListName;   
-}*/
- or
+}
+ /*or
 function copy(flavorList,newListName){
-    newListName=(...flavorList);
+   const newListName=[...flavorList];
     return newListName;
 }
-
+*/
 //console.log(copy(originalFlavors,newFlavors));
 /* Task 7: July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional
  materials highlighting all of their chocolate flavors. 
